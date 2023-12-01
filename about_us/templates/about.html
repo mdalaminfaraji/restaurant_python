@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="d-flex justify-content-around align-items-center py-5 bg-light">
+  <div class="p-1">
+    <h1 class="mb-3">
+      About Us <br />
+      <span class="text-danger"> Our Ambitius kitchen </span>
+    </h1>
+    <p>
+      Welcome to Your Restaurant Name, where we bring a delightful culinary
+      experience to your table. Our passion for food is reflected in every dish
+      we serve, and we take pride in offering a diverse menu that caters to
+      various tastes and preferences.
+    </p>
+    <button type="button" class="btn btn-outline-secondary">Learn More</button>
+  </div>
+
+  <div class="p-2">
+    <img src="{% static 'about.avif' %}" class="rounded" />
+  </div>
+</div>
+{% endblock %}
